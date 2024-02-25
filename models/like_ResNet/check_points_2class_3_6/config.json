@@ -1,0 +1,20 @@
+{
+  "sample_rate": 16000,
+  "n_fft": 1024,
+  "win_length": 1024,
+  "hop_length": 256,
+  "f_min": 0,
+  "f_max": 8000,
+  "n_mels": 80,
+  "segment_size": 48000,
+  "batch_size": 128,
+
+  "count_class": 2,
+  "type_dataset": "mel_spectrograms",
+
+  "ch": 32,
+  "count_block_in_group" : 6,
+  "count_group_block": 3,
+  "type_block": "ResBlock1",
+  "type_transition_block": "TransitionBlock1"
+}

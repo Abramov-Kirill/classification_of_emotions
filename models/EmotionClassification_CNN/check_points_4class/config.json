@@ -1,0 +1,18 @@
+{
+  "sample_rate": 16000,
+  "n_fft": 1024,
+  "win_length": 1024,
+  "hop_length": 256,
+  "f_min": 0,
+  "f_max": 8000,
+  "n_mels": 80,
+  "segment_size": 48000,
+  "batch_size": 128,
+
+  "count_class": 4,
+  "type_dataset": "mel_spectrograms",
+
+  "learning_rate": 0.0001,
+  "count_layers": 4,
+  "ch": 16
+}
