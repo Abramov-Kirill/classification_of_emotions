@@ -35,7 +35,8 @@ count_class = conf.count_class
 
 model = EmotionClassificationResNet(num_classes=count_class, conf=conf)
 #model.load_state_dict(torch.load('check_points_4_class_block1_ch32/ep_16'))
-criterion = nn.MSELoss()
+#criterion = nn.MSELoss()
+criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=conf.learning_rate)
 model.to(device)
 
