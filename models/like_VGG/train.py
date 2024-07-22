@@ -38,7 +38,8 @@ epochs = (0, 50)
 count_class = conf.count_class
 
 model = EmotionClassificationModel(conf=conf)
-criterion = nn.MSELoss()
+#criterion = nn.MSELoss()
+criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=conf.learning_rate)
 model.to(device)
 
